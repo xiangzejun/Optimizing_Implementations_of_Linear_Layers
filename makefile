@@ -5,7 +5,7 @@ main.o: main.cpp strategy.h matrix.h reduce.h
 strategy.o: strategy.cpp matrix.h
 	g++ -O3 -c strategy.cpp -lpthread
 matrix.o: matrix.cpp
-	g++ -O3 -c matrix.cpp matrix.h -lpthread
+	g++ -O3 -c matrix.cpp -lpthread
 reduce.o:reduce.cpp strategy.h matrix.h
 	g++ -O3 -c reduce.cpp -lpthread
 
